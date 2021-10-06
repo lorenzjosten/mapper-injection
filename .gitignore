@@ -3,6 +3,6 @@
 gradle
 
 buildSrc/.gradle
-buildSrc/.build
+buildSrc/build
 
 microservice/build
