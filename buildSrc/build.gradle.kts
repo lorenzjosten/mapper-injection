@@ -11,5 +11,5 @@ repositories {
 }
 
 dependencies {
-    implementation("io.quarkus:gradle-application-plugin:${quarkusPluginVersion}")
+    implementation("io.quarkus:gradle-application-plugin:$quarkusPluginVersion")
 }

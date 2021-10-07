@@ -1,9 +1,15 @@
+val quarkusUniverseBomVersion: String by project
+
 plugins {
     java
     id("io.quarkus")
 }
 
-val quarkusUniverseBomVersion: String by project
+repositories {
+    mavenCentral()
+    maven("https://plugins.gradle.org/m2/")
+    gradlePluginPortal()
+}
 
 dependencies {
     implementation(enforcedPlatform("io.quarkus:quarkus-universe-bom:$quarkusUniverseBomVersion"))
