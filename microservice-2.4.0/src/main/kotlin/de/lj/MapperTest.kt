@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType
 
 @Path("/test")
 class MapperTest(
-    @Inject val personMapper: PersonMapper
+    private val personMapper: PersonMapper
 ) {
     @GET
     @Produces(MediaType.TEXT_PLAIN)

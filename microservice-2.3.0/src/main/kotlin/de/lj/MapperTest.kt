@@ -12,9 +12,9 @@ import javax.ws.rs.core.MediaType
 
 @Path("/test")
 class MapperTest(
-    @Inject val personMapper: PersonMapper
+    private val personMapper: PersonMapper
 ) {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    fun test(): Uni<PersonDto> = Uni.createFrom().item(personMapper.toPersonDto(Person(240, "Tronald Dumb")))
+    fun test(): Uni<PersonDto> = Uni.createFrom().item(personMapper.toPersonDto(Person(230, "Tronald Dumb")))
 }
