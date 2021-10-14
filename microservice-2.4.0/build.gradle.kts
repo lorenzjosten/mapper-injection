@@ -10,6 +10,14 @@ repositories {
     gradlePluginPortal()
 }
 
+sourceSets {
+    main {
+        java {
+            srcDir("${project(":data-library-2.4.0").projectDir}/build/generated/source/kapt/main")
+        }
+    }
+}
+
 dependencies {
     implementation(project(":data-library-2.4.0"))
 
